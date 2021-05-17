@@ -112,57 +112,29 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   
     .contact-icons {
       margin-top: 30px;
+      a {
+        display: inline-block;
+      }
       @media only screen and (max-width: 1200px) {
         margin-top: 10px;
       }
-      .linkedin, .github, .twitter, .email {
+      &__linkedin, &__github, &__twitter, &__email {
+        svg{
           height: 40px;
           width: 40px;
           display: inline-block;
           vertical-align: middle;
           margin-right: 15px;
+          transition: background .3s;
+          &:hover {
+            path {
+              transition: fill .3s ease;
+              fill: #027e79;
+            }
+          }
           @media only screen and (max-width: 1200px) {
             margin-right: 5px;
           }
-      }
-      .linkedin {
-  
-          &:before {
-              background-image: url("../assets/images/linkedin1.svg");
-              background-size: cover;
-              background-repeat: no-repeat;
-              content: '';
-              display: block;
-              height: 40px;
-              transition: background .3s;
-              width: 40px;
-              @media only screen and (max-width: 1200px) {
-                height: 30px;
-                width: 30px;
-              }
-          }
-          &:hover:before {
-              background-image: url("../assets/images/linkedin-highlight.svg");
-          }
-      }
-      .github {
-  
-        &:before {
-            background-image: url("../assets/images/github1.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            content: '';
-            display: block;
-            height: 40px;
-            transition: background .3s;
-            width: 40px;
-            @media only screen and (max-width: 1200px) {
-              height: 30px;
-              width: 30px;
-            }
-        }
-        &:hover:before {
-            background-image: url("../assets/images/github-highlight.svg");
         }
       }
       .simona {
@@ -178,44 +150,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
           background-size: 50px;
           height: 50px;
           width: 50px;
-        }
-      }
-      .twitter {
-        &:before {
-            background-image: url("../assets/images/twitter-square1.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            content: '';
-            display: block;
-            height: 40px;
-            transition: background .3s;
-            width: 40px;
-            @media only screen and (max-width: 1200px) {
-              height: 30px;
-              width: 30px;
-            }
-        }
-        &:hover:before {
-            background-image: url("../assets/images/twitter-highlight.svg");
-        }
-      }
-      .email {
-        &:before {
-            background-image: url("../assets/images/email1.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            content: '';
-            display: block;
-            height: 40px;
-            transition: background .3s;
-            width: 40px;
-            @media only screen and (max-width: 1200px) {
-              height: 30px;
-              width: 30px;
-            }
-        }
-        &:hover:before {
-            background-image: url("../assets/images/email-highlight.svg");
         }
       }
     }
@@ -611,15 +545,27 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
   .contact-info-small-screen {
     .contact-icons {
       margin-top: 30px;
+      a {
+        display: inline-block;
+      }
       @media only screen and (max-width: 1200px) {
         margin-top: 10px;
       }
-      .linkedin, .github, .twitter, .email {
+      &__linkedin, &__github, &__twitter, &__email {
+        svg {
           height: 40px;
           width: 40px;
           display: inline-block;
           vertical-align: middle;
           margin-right: 15px;
+
+          &:hover {
+            path {
+              transition: fill .3s ease;
+              fill: #027e79;
+            }
+          }
+
           @media only screen and (max-width: 1200px) {
             margin-right: 5px;
           }
@@ -627,37 +573,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
             width: 25px;
             height: 25px;
           }
-      }
-      .linkedin {
-  
-          &:before {
-              background-image: url("../assets/images/linkedin1.svg");
-              background-size: cover;
-              background-repeat: no-repeat;
-              content: '';
-              display: block;
-              height: 30px;
-              transition: background .3s;
-              width: 30px;
-          }
-          &:hover:before {
-              background-image: url("../assets/images/linkedin-highlight.svg");
-          }
-      }
-      .github {
-  
-        &:before {
-            background-image: url("../assets/images/github1.svg");
-            background-size: cover;
-            background-repeat: no-repeat;
-            content: '';
-            display: block;
-            height: 30px;
-            transition: background .3s;
-            width: 30px;
-        }
-        &:hover:before {
-            background-image: url("../assets/images/github-highlight.svg");
         }
       }
       .simona {
@@ -680,38 +595,6 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
           background-size: 40px;
           margin-right: 5px;
         }
-      }
-      .twitter {
-  
-          &:before {
-              background-image: url("../assets/images/twitter-square1.svg");
-              background-size: cover;
-              background-repeat: no-repeat;
-              content: '';
-              display: block;
-              height: 30px;
-              transition: background .3s;
-              width: 30px;
-          }
-          &:hover:before {
-              background-image: url("../assets/images/twitter-highlight.svg");
-          }
-      }
-      .email {
-  
-          &:before {
-              background-image: url("../assets/images/email1.svg");
-              background-size: cover;
-              background-repeat: no-repeat;
-              content: '';
-              display: block;
-              height: 30px;
-              transition: background .3s;
-              width: 30px;
-          }
-          &:hover:before {
-              background-image: url("../assets/images/email-highlight.svg");
-          }
       }
     }
   }
