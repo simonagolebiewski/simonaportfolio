@@ -426,12 +426,12 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
     &__right-half {
       display: inline-block;
     }
-    &__fca {
+    &__fca, &__salesforce {
       &--header {
         margin-top: 50px;
       }
     }
-    &__intro, &__movie-vue, &__contact, &__remote-dir, &__fca, &__marketing, &__daily-nclex {
+    &__intro, &__salesforce, &__movie-vue, &__contact, &__remote-dir, &__fca, &__marketing, &__daily-nclex {
       margin-bottom: 30px;
       color: #333333;
       @media only screen and (max-width: 425px) {
@@ -507,6 +507,18 @@ html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockq
    -webkit-transition:background-color 0.3s linear;
    -moz-transition: background-color 0.3s linear;
    -o-transition: background-color 0.3s linear;
+  }
+  .salesforce-dot {
+    background: #00a1e0;
+    -webkit-transition:background-color 0.1s linear;
+    -moz-transition: background-color 0.1s linear;
+    -o-transition: background-color 0.1s linear;
+  }
+  .highlight-salesforce {
+    background: rgba(0, 161, 224, 0.1);
+    -webkit-transition:background-color 0.3s linear;
+    -moz-transition: background-color 0.3s linear;
+    -o-transition: background-color 0.3s linear;
   }
   .blue-dot{
     background: #027E79;
